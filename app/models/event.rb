@@ -1,5 +1,5 @@
 class Event < ApplicationRecord
-  belongs_to :user
+  belongs_to :user #class name administrator
   has_many :attendances
   has_many :users, through: :attendance
 

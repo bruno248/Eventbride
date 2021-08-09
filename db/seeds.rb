@@ -7,5 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+20.times do |i|
+  User.create (email: "lebgdethp#{i+1}@yopmail.com"
+end
 
-Event.new(start_date: "2019-08-20")
+
+
+#Event.new(start_date: "2019-08-20")
+
