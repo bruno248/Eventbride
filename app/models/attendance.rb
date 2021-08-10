@@ -5,7 +5,7 @@ class Attendance < ApplicationRecord
   belongs_to :event
 
   def welcome_event_send
-    AttendanceMailer.welcome_event_email(user.find(self.participant_id)).deliver_now #appel le mailer UserMailer et l'envoi direct
+    AttendanceMailer.welcome_event_email(self.participant, self.event).deliver_now #appel le mailer UserMailer et l'envoi direct
   end
 
 end

@@ -21,7 +21,7 @@ validates :location,
   presence: true
 
 # def start_date_future
-#   errors.add(:start_date, 'This event must be in the future ') unless start_date > Date.today
+#   errors.add(:start_date, ('This event must be in the future ')) unless start_date > DateTime.now
 # end
 
 # validate :duration_length
